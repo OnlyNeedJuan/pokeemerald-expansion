@@ -24,8 +24,8 @@ Route101_EventScript_StartBirchRescue::
 	playbgm MUS_HELP, TRUE
 	msgbox Route101_Text_HelpMe, MSGBOX_DEFAULT
 	closemessage
-	setobjectxy LOCALID_BIRCH, 0, 15
-	setobjectxy LOCALID_ZIGZAGOON, 0, 16
+	setobjectxy LOCALID_BIRCH, 30, 15
+	setobjectxy LOCALID_ZIGZAGOON, 30, 16
 	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_EnterScene
 	applymovement LOCALID_BIRCH, Route101_Movement_BirchRunAway1
 	applymovement LOCALID_ZIGZAGOON, Route101_Movement_ZigzagoonChase1

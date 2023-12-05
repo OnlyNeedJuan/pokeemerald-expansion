@@ -76,17 +76,17 @@ LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent::
 	return
 
 LittlerootTown_EventScript_MoveMomToMaysDoor::
-	setobjectxyperm LOCALID_MOM, 14, 8
+	setobjectxyperm LOCALID_MOM, 44, 8
 	return
 
 LittlerootTown_EventScript_SetTwinPos::
 	goto_if_eq VAR_LITTLEROOT_TOWN_STATE, 0, LittlerootTown_EventScript_SetTwinGuardingRoutePos
-	setobjectxyperm LOCALID_TWIN, 10, 1
+	setobjectxyperm LOCALID_TWIN, 40, 1
 	setobjectmovementtype LOCALID_TWIN, MOVEMENT_TYPE_FACE_UP
 	return
 
 LittlerootTown_EventScript_SetTwinGuardingRoutePos::
-	setobjectxyperm LOCALID_TWIN, 7, 2
+	setobjectxyperm LOCALID_TWIN, 37, 2
 	setobjectmovementtype LOCALID_TWIN, MOVEMENT_TYPE_FACE_DOWN
 	return
 
@@ -99,11 +99,11 @@ LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos::
 	return
 
 LittlerootTown_EventScript_SetMomInFrontOfDoorMale::
-	setobjectxyperm LOCALID_MOM, 5, 9
+	setobjectxyperm LOCALID_MOM, 35, 9
 	return
 
 LittlerootTown_EventScript_SetMomInFrontOfDoorFemale::
-	setobjectxyperm LOCALID_MOM, 14, 9
+	setobjectxyperm LOCALID_MOM, 44, 9
 	return
 
 LittlerootTown_OnFrame:
