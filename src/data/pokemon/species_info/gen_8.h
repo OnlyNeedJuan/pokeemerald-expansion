@@ -4957,7 +4957,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         FRONT_PIC(Regieleki, 64, 56),
         .frontPicYOffset = 5,
         .frontAnimFrames = sAnims_Regieleki,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 8,
         BACK_PIC(Regieleki, 64, 48),
         .backPicYOffset = 9,
