@@ -278,6 +278,56 @@ const struct SpeciesInfo gSpeciesInfo[] =
     },
 
     /* You may add any custom species below this point based on the following structure: */
+#if P_FAMILY_SANDY_SHOCKS
+    [SPECIES_SANDY_SHOCKS_PRE_EVO] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 36,
+        .baseDefense   = 72,
+        .baseSpeed     = 71,
+        .baseSpAttack  = 96,
+        .baseSpDefense = 55,
+        .types = { TYPE_GROUND, TYPE_ELECTRIC },
+        .catchRate = 190,
+        .expYield = 65,
+        .evYield_SpAttack = 1,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL },
+        .abilities = { ABILITY_STEELWORKER, ABILITY_NONE, ABILITY_MAGNET_PULL },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Magnetin"),
+        .cryId = CRY_MAGNEMITE,
+        .natDexNum = NATIONAL_DEX_NONE,
+        .categoryName = _("Magnet"),
+        .height = 64,
+        .weight = 66,
+        .description = COMPOUND_STRING(
+            "When startled this pokémon tries to run.\n"
+            "and hide. It leaves small piles of iron\n"
+            "sand as it goes\n"
+            ),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        FRONT_PIC(SandyShocksPreEvo, 64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SandyShocksPreEvo,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 0,
+        BACK_PIC(SandyShocksPreEvo, 64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        PALETTES(SandyShocks),
+        ICON(QuestionMark, 0),
+        //.footprint = gMonFootprint_Sandy_Shocks,
+        LEARNSETS(SandyShocks),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SANDY_SHOCKS}),
+    },
+#endif //P_FAMILY_SANDY_SHOCKS
 
     /*
     [SPECIES_NONE] =

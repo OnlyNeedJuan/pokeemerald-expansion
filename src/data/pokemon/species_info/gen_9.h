@@ -3969,35 +3969,35 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_SANDY_SHOCKS
     [SPECIES_SANDY_SHOCKS] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 81,
-        .baseDefense   = 97,
+        .baseHP        = 80,
+        .baseAttack    = 61,
+        .baseDefense   = 92,
         .baseSpeed     = 101,
         .baseSpAttack  = 121,
-        .baseSpDefense = 85,
+        .baseSpDefense = 70,
         .types = { TYPE_ELECTRIC, TYPE_GROUND },
-        .catchRate = 30,
-        .expYield = 285,
+        .catchRate = 90,
+        .expYield = 240,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
-        .eggCycles = 50,
+        .eggCycles = 20,
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = { EGG_GROUP_NO_EGGS_DISCOVERED, EGG_GROUP_NO_EGGS_DISCOVERED },
-        .abilities = { ABILITY_PROTOSYNTHESIS, ABILITY_NONE },
+        .abilities = { ABILITY_STEELWORKER, ABILITY_NONE , ABILITY_MAGNET_PULL},
         .bodyColor = BODY_COLOR_GRAY,
-        .isParadoxForm = TRUE,
-        .speciesName = _("SndyShocks"),
+        .isParadoxForm = FALSE,
+        .speciesName = _("Ferroton"),
         .cryId = CRY_SANDY_SHOCKS,
         .natDexNum = NATIONAL_DEX_SANDY_SHOCKS,
-        .categoryName = _("Paradox"),
+        .categoryName = _("Magnet"),
         .height = 23,
         .weight = 600,
         .description = COMPOUND_STRING(
-            "It slightly resembles a Magneton\n"
-            "that lived for 10,000 years and was\n"
-            "featured in an article in a\n"
-            "paranormal magazine."),
+            "Closely related to Magneton, this\n"
+            "Pokémon marks its territory with\n"
+            "electrically charged puddles of\n"
+            "iron."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

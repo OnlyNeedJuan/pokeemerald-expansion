@@ -10625,6 +10625,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_SandyShocks[] = INCBIN_U32("graphics/pokemon/sandy_shocks/shiny.gbapal.lz");
     const u8 gMonIcon_SandyShocks[] = INCBIN_U8("graphics/pokemon/sandy_shocks/icon.4bpp");
     // const u8 gMonFootprint_SandyShocks[] = INCBIN_U8("graphics/pokemon/sandy_shocks/footprint.1bpp");
+
+    const u32 gMonFrontPic_SandyShocksPreEvo[] = INCBIN_U32("graphics/pokemon/sandy_shocks_pre_evo/front_anim.4bpp.lz");
+    const u32 gMonPalette_SandyShocksPreEvo[] = INCBIN_U32("graphics/pokemon/sandy_shocks_pre_evo/normal.gbapal.lz");
+    const u32 gMonBackPic_SandyShocksPreEvo[] = INCBIN_U32("graphics/pokemon/sandy_shocks_pre_evo/back.4bpp.lz");
+    const u32 gMonShinyPalette_SandyShocksPreEvo[] = INCBIN_U32("graphics/pokemon/sandy_shocks_pre_evo/shiny.gbapal.lz");
+    const u8 gMonIcon_SandyShocksPreEvo[] = INCBIN_U8("graphics/pokemon/sandy_shocks_pre_evo/icon.4bpp");
+    // const u8 gMonFootprint_SandyShocksPreEvo[] = INCBIN_U8("graphics/pokemon/sandy_shocks_pre_evo/footprint.1bpp");
 #endif //P_FAMILY_SANDY_SHOCKS
 
 #if P_FAMILY_IRON_TREADS
