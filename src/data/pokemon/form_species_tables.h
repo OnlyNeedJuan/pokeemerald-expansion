@@ -436,6 +436,7 @@ static const u16 sZapdosFormSpeciesIdTable[] = {
 static const u16 sMoltresFormSpeciesIdTable[] = {
     SPECIES_MOLTRES,
     SPECIES_MOLTRES_GALARIAN,
+    SPECIES_MOLTRES_REGIONAL,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_MOLTRES

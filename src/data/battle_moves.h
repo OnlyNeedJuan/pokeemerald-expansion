@@ -2537,15 +2537,15 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_SKY_ATTACK] =
     {
         .effect = EFFECT_TWO_TURNS_ATTACK,
-        .power = 140,
+        .power = 160,
         .type = TYPE_FLYING,
-        .accuracy = 90,
+        .accuracy = 100,
         .pp = 5,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_PHYSICAL,
-        .argument = MOVE_EFFECT_FLINCH,
+        .argument = STATUS1_BURN,
         .zMoveEffect = Z_EFFECT_NONE,
         .twoTurnMove = TRUE,
         .sheerForceBoost = TRUE,
@@ -15904,19 +15904,4 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .split = SPLIT_PHYSICAL,
         .argument = MAX_EFFECT_BYPASS_PROTECT, //EFFECT TODO
     },
-    
-    [MOVE_PLASMA_BLAST] =
-    {   //ANIM TODO
-        .effect = EFFECT_RECHARGE,
-        .power = 200,
-        .type = TYPE_ELECTRIC,
-        .accuracy = 90,
-        .pp = 5,
-        .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .split = SPLIT_SPECIAL,
-        .zMoveEffect = Z_EFFECT_NONE,
-        .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3
-    }
 };

@@ -2276,6 +2276,43 @@ static const union AnimCmd sAnim_Moltres_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_MoltresRegional_1[] =
+{
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 3),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_END,
+};
+
 #if P_GALARIAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(MoltresGalarian);
 #endif //P_GALARIAN_FORMS
@@ -10678,6 +10715,7 @@ SINGLE_ANIMATION(ZapdosGalarian);
 #endif //P_FAMILY_ZAPDOS
 #if P_FAMILY_MOLTRES
 SINGLE_ANIMATION(Moltres);
+SINGLE_ANIMATION(MoltresRegional);
 #if P_GALARIAN_FORMS
 SINGLE_ANIMATION(MoltresGalarian);
 #endif //P_GALARIAN_FORMS

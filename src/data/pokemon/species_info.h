@@ -322,12 +322,64 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         PALETTES(SandyShocks),
-        ICON(QuestionMark, 0),
+        ICON(SandyShocksPreEvo, 0),
         //.footprint = gMonFootprint_Sandy_Shocks,
         LEARNSETS(SandyShocks),
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SANDY_SHOCKS}),
     },
 #endif //P_FAMILY_SANDY_SHOCKS
+
+
+    [SPECIES_MOLTRES_REGIONAL] =
+    {
+        .baseHP        = 90,
+        .baseAttack    = 100,
+        .baseDefense   = 95,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 125,
+        .types = { TYPE_POISON, TYPE_FLYING },
+        .catchRate = 3,
+        .expYield = 290,
+        .evYield_SpDefense = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 35,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = { EGG_GROUP_NO_EGGS_DISCOVERED, EGG_GROUP_NO_EGGS_DISCOVERED },
+        .abilities = { ABILITY_MERCILESS, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Moltres"),
+        .cryId = CRY_MOLTRES,
+        .natDexNum = NATIONAL_DEX_MOLTRES,
+        .categoryName = _("Spiteful"),
+        .height = 20,
+        .weight = 560,
+        .description = COMPOUND_STRING(
+            "This is a newly discovered Pokémon.\n"
+            "It is currently under investigation.\n"
+            "No detailed information is available\n"
+            "at this time."),
+        .pokemonScale = 270,
+        .pokemonOffset = 0,
+        .trainerScale = 387,
+        .trainerOffset = 8,
+        FRONT_PIC(MoltresRegional, 64, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_MoltresRegional,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+        .enemyMonElevation = 0,
+        BACK_PIC(MoltresRegional, 64, 64),
+        .backPicYOffset = 5,
+        .backAnimId = BACK_ANIM_NONE,
+        PALETTES(MoltresRegional),
+        ICON(MoltresRegional, 5),
+        .footprint = gMonFootprint_MoltresRegional,
+        LEARNSETS(MoltresRegional),
+        .formSpeciesIdTable = sMoltresFormSpeciesIdTable,
+    },
+
+
 
     /*
     [SPECIES_NONE] =
@@ -378,7 +430,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .backAnimId = BACK_ANIM_NONE,
         PALETTES(CircledQuestionMark),
         //PALETTE_FEMALE(CircledQuestionMark),
-        ICON(QuestionMark, 0),
+        ICON(QuestionMark, 0),//0 is the pal index number
         //ICON_FEMALE(QuestionMark, 1),
         //.footprint = gMonFootprint_None,
         LEARNSETS(None),

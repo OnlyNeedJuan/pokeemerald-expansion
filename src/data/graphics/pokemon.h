@@ -2148,6 +2148,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonIcon_Moltres[] = INCBIN_U8("graphics/pokemon/moltres/icon.4bpp");
     const u8 gMonFootprint_Moltres[] = INCBIN_U8("graphics/pokemon/moltres/footprint.1bpp");
 
+    const u32 gMonFrontPic_MoltresRegional[] = INCBIN_U32("graphics/pokemon/moltres/regional/front_anim.4bpp.lz");
+    const u32 gMonPalette_MoltresRegional[] = INCBIN_U32("graphics/pokemon/moltres/regional/normal.gbapal.lz");
+    const u32 gMonBackPic_MoltresRegional[] = INCBIN_U32("graphics/pokemon/moltres/regional/back.4bpp.lz");
+    const u32 gMonShinyPalette_MoltresRegional[] = INCBIN_U32("graphics/pokemon/moltres/regional/shiny.gbapal.lz");
+    const u8 gMonIcon_MoltresRegional[] = INCBIN_U8("graphics/pokemon/moltres/regional/icon.4bpp");
+    const u8 gMonFootprint_MoltresRegional[] = INCBIN_U8("graphics/pokemon/moltres/regional/footprint.1bpp");
+
 #if P_GALARIAN_FORMS
     const u32 gMonFrontPic_MoltresGalarian[] = INCBIN_U32("graphics/pokemon/moltres/galarian/front.4bpp.lz");
     const u32 gMonPalette_MoltresGalarian[] = INCBIN_U32("graphics/pokemon/moltres/galarian/normal.gbapal.lz");
@@ -10626,7 +10633,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonIcon_SandyShocks[] = INCBIN_U8("graphics/pokemon/sandy_shocks/icon.4bpp");
     // const u8 gMonFootprint_SandyShocks[] = INCBIN_U8("graphics/pokemon/sandy_shocks/footprint.1bpp");
 
-    const u32 gMonFrontPic_SandyShocksPreEvo[] = INCBIN_U32("graphics/pokemon/sandy_shocks_pre_evo/front_anim.4bpp.lz");
+    const u32 gMonFrontPic_SandyShocksPreEvo[] = INCBIN_U32("graphics/pokemon/sandy_shocks_pre_evo/anim_front.4bpp.lz");
     const u32 gMonPalette_SandyShocksPreEvo[] = INCBIN_U32("graphics/pokemon/sandy_shocks_pre_evo/normal.gbapal.lz");
     const u32 gMonBackPic_SandyShocksPreEvo[] = INCBIN_U32("graphics/pokemon/sandy_shocks_pre_evo/back.4bpp.lz");
     const u32 gMonShinyPalette_SandyShocksPreEvo[] = INCBIN_U32("graphics/pokemon/sandy_shocks_pre_evo/shiny.gbapal.lz");

@@ -11820,7 +11820,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,                                             \
         .trainerScale = 387,                                            \
         .trainerOffset = 8,                                             \
-        .footprint = gMonFootprint_Moltres,                             \
         .formSpeciesIdTable = sMoltresFormSpeciesIdTable,               \
         .isLegendary = TRUE
 
@@ -11834,9 +11833,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = 125,
         .baseSpDefense = 85,
         .types = { TYPE_FIRE, TYPE_FLYING },
-        .expYield = 261,
+        .expYield = 290,
         .evYield_SpAttack = 3,
-        .eggCycles = 80,
+        .eggCycles = 120,
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_FLAME_BODY },
         .bodyColor = BODY_COLOR_YELLOW,
         .categoryName = _("Flame"),
@@ -11855,6 +11854,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         PALETTES(Moltres),
         ICON(Moltres, 0),
+        .footprint = gMonFootprint_Moltres,
         LEARNSETS(Moltres),
     },
 
@@ -11890,6 +11890,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         //.backAnimId = BACK_ANIM_NONE,
         PALETTES(MoltresGalarian),
         ICON(MoltresGalarian, 0),
+        .footprint = gMonFootprint_Moltres,
         LEARNSETS(MoltresGalarian),
         .isGalarianForm = TRUE,
     },
