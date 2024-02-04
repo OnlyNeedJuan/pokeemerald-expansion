@@ -232,6 +232,10 @@ PetalburgCity_EventScript_CitySign::
 	msgbox PetalburgCity_Text_CitySign, MSGBOX_SIGN
 	end
 
+PetalburgCity_EventScript_LadyHidden::
+	msgbox PetalburgCity_Text_Flavorareas, MSGBOX_SIGN
+	end
+
 PetalburgCity_EventScript_Gentleman::
 	msgbox PetalburgCity_Text_FullPartyExplanation, MSGBOX_NPC
 	end
@@ -765,3 +769,12 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
 	.string "talented TRAINERS.\p"
 	.string "I'm sorry to have taken your time.$"
+
+PetalburgCity_Text_Flavorareas:
+	.string "I went over here expecting some\n"
+	.string "kind of secret, but no, it's\n"
+	.string "just empty.\p" 
+	.string "I guess not everything\n"
+	.string "needs to have a grand reward.\p"
+	.string "Sometimes the journey is more\n"
+	.string "important$."
