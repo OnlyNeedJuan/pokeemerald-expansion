@@ -2148,7 +2148,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonIcon_Moltres[] = INCBIN_U8("graphics/pokemon/moltres/icon.4bpp");
     const u8 gMonFootprint_Moltres[] = INCBIN_U8("graphics/pokemon/moltres/footprint.1bpp");
 
-    const u32 gMonFrontPic_MoltresRegional[] = INCBIN_U32("graphics/pokemon/moltres/regional/front_anim.4bpp.lz");
+    const u32 gMonFrontPic_MoltresRegional[] = INCBIN_U32("graphics/pokemon/moltres/regional/anim_front.4bpp.lz");
     const u32 gMonPalette_MoltresRegional[] = INCBIN_U32("graphics/pokemon/moltres/regional/normal.gbapal.lz");
     const u32 gMonBackPic_MoltresRegional[] = INCBIN_U32("graphics/pokemon/moltres/regional/back.4bpp.lz");
     const u32 gMonShinyPalette_MoltresRegional[] = INCBIN_U32("graphics/pokemon/moltres/regional/shiny.gbapal.lz");
