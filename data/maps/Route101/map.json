@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_OLDALE_TOWN",
-      "offset": 30,
+      "offset": 40,
       "direction": "up"
     },
     {
       "map": "MAP_LITTLEROOT_TOWN",
-      "offset": 0,
+      "offset": 10,
       "direction": "down"
     }
   ],

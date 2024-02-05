@@ -836,3 +836,14 @@ const struct Tileset gTileset_PorytilesPrimaryTest =
     .metatileAttributes = gMetatileAttributes_PorytilesPrimaryTest,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PorytilesSecondaryTest =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesSecondaryTest,
+    .palettes = gTilesetPalettes_PorytilesSecondaryTest,
+    .metatiles = gMetatiles_PorytilesSecondaryTest,
+    .metatileAttributes = gMetatileAttributes_PorytilesSecondaryTest,
+    .callback = NULL,
+};

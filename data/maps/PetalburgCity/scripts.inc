@@ -236,6 +236,10 @@ PetalburgCity_EventScript_LadyHidden::
 	msgbox PetalburgCity_Text_Flavorareas, MSGBOX_SIGN
 	end
 
+PetalburgCity_EventScript_DisgruntledFisherman::
+	msgbox PetalburgCity_Text_DisgruntledFisherman, MSGBOX_SIGN
+	end
+
 PetalburgCity_EventScript_Gentleman::
 	msgbox PetalburgCity_Text_FullPartyExplanation, MSGBOX_NPC
 	end
@@ -777,4 +781,12 @@ PetalburgCity_Text_Flavorareas:
 	.string "I guess not everything\n"
 	.string "needs to have a grand reward.\p"
 	.string "Sometimes the journey is more\n"
-	.string "important$."
+	.string "important.$"
+
+PetalburgCity_Text_DisgruntledFisherman:
+	.string "I was going to fish in my\n"
+	.string "favorite spot, but this guy is\n"
+	.string "just looking at his own\n"
+	.string "reflection.\p"
+	.string "Doesn't he know that spot is\n"
+	.string "MY spot?!$"
