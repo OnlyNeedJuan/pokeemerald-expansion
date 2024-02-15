@@ -9814,4 +9814,15 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
+// Custom Evolution Items
+
+    [ITEM_DRAGON_STONE] =
+    {
+        .name = _("Dragon Stone"),
+        .description = sDragonStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    }
 };

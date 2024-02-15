@@ -3993,3 +3993,10 @@ static const u8 sGlimmeringCharmDesc[] = _(
     "A charm that will\n"
     "raise the shards\n"
     "from Tera Raids.");
+
+//Custom Evolution Items
+
+static const u8 sDragonStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");

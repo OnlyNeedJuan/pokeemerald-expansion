@@ -2058,3 +2058,7 @@ const u32 gItemIconPalette_BerserkGene[] = INCBIN_U32("graphics/items/icon_palet
 
 const u32 gItemIcon_FairyFeather[] = INCBIN_U32("graphics/items/icons/fairy_feather.4bpp.lz");
 const u32 gItemIconPalette_FairyFeather[] = INCBIN_U32("graphics/items/icon_palettes/fairy_feather.gbapal.lz");
+
+// Custom Evolution Items
+const u32 gItemIcon_DragonStone[] = INCBIN_U32("graphics/items/icons/dragon_stone.4bpp.lz");
+const u32 gItemIconPalette_DragonStone[] = INCBIN_U32("graphics/items/icon_palettes/dragon_stone.gbapal.lz");

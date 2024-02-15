@@ -9000,7 +9000,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Seadra,
         LEARNSETS(Seadra),
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DRAGON_SCALE, SPECIES_KINGDRA},
-                                {EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_KINGDRA}),
+                                {EVO_ITEM, ITEM_DRAGON_STONE, SPECIES_KINGDRA}),
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -9008,9 +9008,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         .baseHP        = 75,
         .baseAttack    = 95,
-        .baseDefense   = 95,
+        .baseDefense   = 100,
         .baseSpeed     = 85,
-        .baseSpAttack  = 95,
+        .baseSpAttack  = 100,
         .baseSpDefense = 95,
         .types = { TYPE_WATER, TYPE_DRAGON },
         .catchRate = 45,
