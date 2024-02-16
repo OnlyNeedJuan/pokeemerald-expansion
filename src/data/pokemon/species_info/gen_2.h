@@ -3512,7 +3512,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         ICON(QwilfishHisuian, 0),
         LEARNSETS(QwilfishHisuian),
         .isHisuianForm = TRUE,
-        .evolutions = EVOLUTION({EVO_LEVE, 28, SPECIES_OVERQWIL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_OVERQWIL}),
     },
 
     [SPECIES_OVERQWIL] =
