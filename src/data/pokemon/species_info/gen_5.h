@@ -99,7 +99,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Snivy, 1),
         .footprint = gMonFootprint_Snivy,
         LEARNSETS(Snivy),
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_SERVINE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 19, SPECIES_SERVINE}),
     },
 
     [SPECIES_SERVINE] =
@@ -147,7 +147,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Servine, 1),
         .footprint = gMonFootprint_Servine,
         LEARNSETS(Servine),
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SERPERIOR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SERPERIOR}),
     },
 
     [SPECIES_SERPERIOR] =
@@ -1603,8 +1603,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Boldore, 0),
         .footprint = gMonFootprint_Boldore,
         LEARNSETS(Boldore),
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GIGALITH},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GIGALITH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_GIGALITH}),
     },
 
     [SPECIES_GIGALITH] =
@@ -2044,8 +2043,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Gurdurr, 1),
         .footprint = gMonFootprint_Gurdurr,
         LEARNSETS(Gurdurr),
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_CONKELDURR},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_CONKELDURR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_CONKELDURR}),
     },
 
     [SPECIES_CONKELDURR] =
@@ -3562,7 +3560,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Dwebble, 0),
         .footprint = gMonFootprint_Dwebble,
         LEARNSETS(Dwebble),
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_CRUSTLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_CRUSTLE}),
     },
 
     [SPECIES_CRUSTLE] =
@@ -3661,7 +3659,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Scraggy, 2),
         .footprint = gMonFootprint_Scraggy,
         LEARNSETS(Scraggy),
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_SCRAFTY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SCRAFTY}),
     },
 
     [SPECIES_SCRAFTY] =
@@ -3896,7 +3894,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(YamaskGalarian, 2),
         LEARNSETS(YamaskGalarian),
         .isGalarianForm = TRUE,
-        .evolutions = EVOLUTION({EVO_SCRIPT_TRIGGER_DMG, 49, SPECIES_RUNERIGUS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_RUNERIGUS}),
     },
 
     [SPECIES_RUNERIGUS] =
@@ -4588,7 +4586,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Gothita, 2),
         .footprint = gMonFootprint_Gothita,
         LEARNSETS(Gothita),
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GOTHORITA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_GOTHORITA}),
     },
 
     [SPECIES_GOTHORITA] =
@@ -4735,7 +4733,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Solosis, 1),
         .footprint = gMonFootprint_Solosis,
         LEARNSETS(Solosis),
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_DUOSION}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_DUOSION}),
     },
 
     [SPECIES_DUOSION] =
@@ -4980,7 +4978,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Vanillite, 0),
         .footprint = gMonFootprint_Vanillite,
         LEARNSETS(Vanillite),
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_VANILLISH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_VANILLISH}),
     },
 
     [SPECIES_VANILLISH] =
@@ -5029,7 +5027,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Vanillish, 2),
         .footprint = gMonFootprint_Vanillish,
         LEARNSETS(Vanillish),
-        .evolutions = EVOLUTION({EVO_LEVEL, 47, SPECIES_VANILLUXE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_VANILLUXE}),
     },
 
     [SPECIES_VANILLUXE] =
@@ -5463,7 +5461,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Foongus, 0),
         .footprint = gMonFootprint_Foongus,
         LEARNSETS(Foongus),
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_AMOONGUSS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_AMOONGUSS}),
     },
 
     [SPECIES_AMOONGUSS] =
@@ -5567,7 +5565,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON_FEMALE(Frillish, 1),
         .footprint = gMonFootprint_Frillish,
         LEARNSETS(Frillish),
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_JELLICENT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_JELLICENT}),
     },
 
     [SPECIES_JELLICENT] =
@@ -5717,7 +5715,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Joltik, 0),
         .footprint = gMonFootprint_Joltik,
         LEARNSETS(Joltik),
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GALVANTULA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GALVANTULA}),
     },
 
     [SPECIES_GALVANTULA] =
@@ -5916,7 +5914,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Klink, 0),
         .footprint = gMonFootprint_Klink,
         LEARNSETS(Klink),
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_KLANG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_KLANG}),
     },
 
     [SPECIES_KLANG] =
@@ -6066,7 +6064,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Tynamo, 0),
         .footprint = gMonFootprint_Tynamo,
         LEARNSETS(Tynamo),
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_EELEKTRIK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_EELEKTRIK}),
     },
 
     [SPECIES_EELEKTRIK] =
@@ -6315,7 +6313,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Litwick, 2),
         .footprint = gMonFootprint_Litwick,
         LEARNSETS(Litwick),
-        .evolutions = EVOLUTION({EVO_LEVEL, 41, SPECIES_LAMPENT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_LAMPENT}),
     },
 
     [SPECIES_LAMPENT] =
@@ -6470,7 +6468,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Axew, 1),
         .footprint = gMonFootprint_Axew,
         LEARNSETS(Axew),
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_FRAXURE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_FRAXURE}),
     },
 
     [SPECIES_FRAXURE] =
@@ -6615,7 +6613,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Cubchoo, 0),
         .footprint = gMonFootprint_Cubchoo,
         LEARNSETS(Cubchoo),
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_BEARTIC}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_BEARTIC}),
     },
 
     [SPECIES_BEARTIC] =
@@ -6953,7 +6951,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Mienfoo, 1),
         .footprint = gMonFootprint_Mienfoo,
         LEARNSETS(Mienfoo),
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_MIENSHAO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_MIENSHAO}),
     },
 
     [SPECIES_MIENSHAO] =
@@ -7201,7 +7199,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Pawniard, 0),
         .footprint = gMonFootprint_Pawniard,
         LEARNSETS(Pawniard),
-        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_BISHARP}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_BISHARP}),
     },
 
     [SPECIES_BISHARP] =
@@ -7249,7 +7247,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Bisharp, 0),
         .footprint = gMonFootprint_Bisharp,
         LEARNSETS(Bisharp),
-        .evolutions = EVOLUTION({EVO_NONE, 0, SPECIES_KINGAMBIT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_KINGAMBIT}),
     },
 
 #if P_GEN_9_CROSS_EVOS
@@ -7397,7 +7395,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Rufflet, 2),
         .footprint = gMonFootprint_Rufflet,
         LEARNSETS(Rufflet),
-        .evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_BRAVIARY},
+        .evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_BRAVIARY},
                                 {EVO_NONE, 0, SPECIES_BRAVIARY_HISUIAN}),
     },
 
@@ -7540,7 +7538,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Vullaby, 0),
         .footprint = gMonFootprint_Vullaby,
         LEARNSETS(Vullaby),
-        .evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_MANDIBUZZ}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_MANDIBUZZ}),
     },
 
     [SPECIES_MANDIBUZZ] =

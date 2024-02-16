@@ -1785,7 +1785,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Fomantis, 1),
         .footprint = gMonFootprint_Fomantis,
         LEARNSETS(Fomantis),
-        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 34, SPECIES_LURANTIS}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 24, SPECIES_LURANTIS}),
     },
 
     [SPECIES_LURANTIS] =
@@ -2726,7 +2726,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(TypeNull, 0),
         .footprint = gMonFootprint_Type_Null,
         LEARNSETS(TypeNull),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_SILVALLY_NORMAL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SILVALLY_NORMAL}),
     },
 
 #define SILVALLY_SPECIES_INFO(type, palette)                                            \
@@ -3311,7 +3311,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(JangmoO, 2),
         .footprint = gMonFootprint_JangmoO,
         LEARNSETS(JangmoO),
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_HAKAMO_O}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_HAKAMO_O}),
     },
 
     [SPECIES_HAKAMO_O] =
@@ -4509,7 +4509,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Poipole, 0),
         .footprint = gMonFootprint_Poipole,
         LEARNSETS(Poipole),
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_DRAGON_PULSE, SPECIES_NAGANADEL}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DRAGON_STONE, SPECIES_NAGANADEL}),
     },
 
     [SPECIES_NAGANADEL] =

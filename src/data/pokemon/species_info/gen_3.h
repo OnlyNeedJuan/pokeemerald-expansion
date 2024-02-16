@@ -2203,17 +2203,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Vigoroth, 2),
         .footprint = gMonFootprint_Vigoroth,
         LEARNSETS(Vigoroth),
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SLAKING}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 49, SPECIES_SLAKING}),
     },
 
     [SPECIES_SLAKING] =
     {
         .baseHP        = 150,
-        .baseAttack    = 160,
-        .baseDefense   = 100,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 65,
+        .baseAttack    = 150,
+        .baseDefense   = 90,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 55,
         .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 45,
         .expYield = 252,
@@ -2223,7 +2223,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD },
-        .abilities = { ABILITY_TRUANT, ABILITY_NONE },
+        .abilities = { ABILITY_SCRAPPY, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Slaking"),
         .cryId = CRY_SLAKING,
@@ -2796,7 +2796,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Skitty, 0),
         .footprint = gMonFootprint_Skitty,
         LEARNSETS(Skitty),
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_DELCATTY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_DELCATTY}),
     },
 
     [SPECIES_DELCATTY] =
@@ -3085,7 +3085,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Aron, 2),
         .footprint = gMonFootprint_Aron,
         LEARNSETS(Aron),
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_LAIRON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_LAIRON}),
     },
 
     [SPECIES_LAIRON] =
@@ -3761,7 +3761,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Budew, 1),
         .footprint = gMonFootprint_Budew,
         LEARNSETS(Budew),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP_DAY, 0, SPECIES_ROSELIA}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 13, SPECIES_ROSELIA}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
@@ -4668,9 +4668,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_FLYGON] =
     {
         .baseHP        = 80,
-        .baseAttack    = 100,
+        .baseAttack    = 105,
         .baseDefense   = 80,
-        .baseSpeed     = 100,
+        .baseSpeed     = 105,
         .baseSpAttack  = 80,
         .baseSpDefense = 80,
         .types = { TYPE_GROUND, TYPE_DRAGON },
@@ -5983,7 +5983,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Shuppet, 0),
         .footprint = gMonFootprint_Shuppet,
         LEARNSETS(Shuppet),
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_BANETTE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_BANETTE}),
     },
 
 #define BANETTE_MISC_INFO                                           \
@@ -6125,7 +6125,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Duskull, 0),
         .footprint = gMonFootprint_Duskull,
         LEARNSETS(Duskull),
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_DUSCLOPS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DUSCLOPS}),
     },
 
     [SPECIES_DUSCLOPS] =

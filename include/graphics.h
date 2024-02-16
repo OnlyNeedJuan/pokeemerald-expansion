@@ -3523,4 +3523,8 @@ extern const u8 gMailTilemap_Retro[];
 extern const u8 gMonMarkingsMenu_Gfx[];
 extern const u16 gMonMarkingsMenu_Pal[];
 
+//Custom Evolution Items
+extern const u32 gItemIcon_DragonStone[];
+extern const u32 gItemIconPalette_DragonStone[];
+
 #endif //GUARD_GRAPHICS_H

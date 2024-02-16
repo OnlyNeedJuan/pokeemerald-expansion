@@ -3167,8 +3167,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Goomy, 5),
         .footprint = gMonFootprint_Goomy,
         LEARNSETS(Goomy),
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SLIGGOO},
-                                {EVO_NONE, 0, SPECIES_SLIGGOO_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SLIGGOO},
+                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_SLIGGOO_HISUIAN}),
     },
 
 #define SLIGGOO_MISC_INFO                                       \
@@ -3222,7 +3222,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Sliggoo, 5),
         LEARNSETS(Sliggoo),
         .evolutions = EVOLUTION({EVO_LEVEL_RAIN, 50, SPECIES_GOODRA},
-                                {EVO_LEVEL_FOG, 50, SPECIES_GOODRA}),
+                                {EVO_LEVEL_FOG, 45, SPECIES_GOODRA}),
     },
 
 #define GOODRA_MISC_INFO                                        \

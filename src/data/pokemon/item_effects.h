@@ -648,4 +648,7 @@ const u8 *const gItemEffectTable[ITEMS_COUNT] =
     [ITEM_GREPA_BERRY]        = gItemEffect_GrepaBerry,
     [ITEM_TAMATO_BERRY]       = gItemEffect_TamatoBerry,
     [LAST_BERRY_INDEX]        = NULL,
+
+    // Custom Evolution Items
+    [ITEM_DRAGON_STONE]       = gItemEffect_EvoItem,
 };
