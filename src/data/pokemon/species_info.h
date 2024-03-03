@@ -378,7 +378,52 @@ const struct SpeciesInfo gSpeciesInfo[] =
         LEARNSETS(MoltresRegional),
         .formSpeciesIdTable = sMoltresFormSpeciesIdTable,
     },
-
+#if P_FAMILY_SWABLU
+    [SPECIES_AZUTRICE] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 95,
+        .baseDefense   = 95,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 105,
+        .types = { TYPE_DRAGON, TYPE_FAIRY },
+        .catchRate = 45,
+        .expYield = 243,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_ERRATIC,
+        .eggGroups = { EGG_GROUP_FLYING, EGG_GROUP_DRAGON },
+        .bodyColor = BODY_COLOR_BLUE,
+        .abilities = { ABILITY_PIXILATE, ABILITY_NONE, ABILITY_BERSERK },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Azutrice"),
+        .cryId = CRY_ALTARIA_MEGA,
+        .categoryName = _("Fluffy Bird"),
+        .height = 15,
+        .weight = 206,
+        .description = COMPOUND_STRING(
+            "It sings with a voice that is even more\n"
+            "beautiful than before it Mega Evolved.\n"
+            "Its feathers became larger for protection\n"
+            "and glimmer with an iridescent sheen."),
+        .pokemonScale = 327,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        FRONT_PIC(AltariaMega, 64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_AltariaMega,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 6,
+        BACK_PIC(AltariaMega, 64, 48),
+        .backPicYOffset = 10,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        PALETTES(AltariaMega),
+        ICON(AltariaMega, 0),
 
 
     /*

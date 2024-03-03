@@ -4829,7 +4829,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 40,
         .baseSpDefense = 75,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_FLYING, TYPE_FLYING },
         .catchRate = 255,
         .expYield = 62,
         .evYield_SpDefense = 1,
@@ -4919,6 +4919,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         PALETTES(Altaria),
         ICON(Altaria, 0),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SHINY_STONE, SPECIES_AZUTRICE}
     },
 
 #if P_MEGA_EVOLUTIONS
