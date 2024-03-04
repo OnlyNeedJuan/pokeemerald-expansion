@@ -323,7 +323,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         PALETTES(SandyShocks),
         ICON(SandyShocksPreEvo, 0),
-        //.footprint = gMonFootprint_Sandy_Shocks,
+        .footprint = gMonFootprint_Sandy_Shocks,
         LEARNSETS(SandyShocks),
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SANDY_SHOCKS}),
     },
@@ -414,17 +414,20 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        FRONT_PIC(AltariaMega, 64, 64),
+        FRONT_PIC(Azutrice, 64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_AltariaMega,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimFrames = sAnims_Azutrice,
+        .frontAnimId = ANIM_GROW,
         .enemyMonElevation = 6,
-        BACK_PIC(AltariaMega, 64, 48),
+        BACK_PIC(Azutrice, 64, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        PALETTES(AltariaMega),
-        ICON(AltariaMega, 0),
-
+        PALETTES(Azutrice),
+        ICON(Azutrice, 0),
+        .footprint = gMonFootprint_Azutrice,
+        LEARNSETS(Altaria),
+    },
+    #endif //P_FAMILY_SWABLU
 
     /*
     [SPECIES_NONE] =

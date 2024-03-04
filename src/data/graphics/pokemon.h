@@ -4172,6 +4172,12 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonIcon_Altaria[] = INCBIN_U8("graphics/pokemon/altaria/icon.4bpp");
     const u8 gMonFootprint_Altaria[] = INCBIN_U8("graphics/pokemon/altaria/footprint.1bpp");
 
+    const u32 gMonFrontPic_Azutrice[] = INCBIN_U32("graphics/pokemon/azutrice/anim_front.4bpp.lz");
+    const u32 gMonPalette_Azutrice[] = INCBIN_U32("graphics/pokemon/azutrice/normal.gbapal.lz");
+    const u32 gMonBackPic_Azutrice[] = INCBIN_U32("graphics/pokemon/azutrice/back.4bpp.lz");
+    const u32 gMonShinyPalette_Azutrice[] = INCBIN_U32("graphics/pokemon/azutrice/shiny.gbapal.lz");
+    const u8 gMonIcon_Azutrice[] = INCBIN_U8("graphics/pokemon/azutrice/icon.4bpp");
+    const u8 gMonFootprint_Azutrice[] = INCBIN_U8("graphics/pokemon/azutrice/footprint.1bpp");
 #if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_AltariaMega[] = INCBIN_U32("graphics/pokemon/altaria/mega/front.4bpp.lz");
     const u32 gMonPalette_AltariaMega[] = INCBIN_U32("graphics/pokemon/altaria/mega/normal.gbapal.lz");
@@ -9893,7 +9899,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FAMILY_ZARUDE
 
 #if P_FAMILY_REGIELEKI
-    const u32 gMonFrontPic_Regieleki[] = INCBIN_U32("graphics/pokemon/regieleki/front.4bpp.lz");
+    const u32 gMonFrontPic_Regieleki[] = INCBIN_U32("graphics/pokemon/regieleki/anim_front.4bpp.lz");
     const u32 gMonPalette_Regieleki[] = INCBIN_U32("graphics/pokemon/regieleki/normal.gbapal.lz");
     const u32 gMonBackPic_Regieleki[] = INCBIN_U32("graphics/pokemon/regieleki/back.4bpp.lz");
     const u32 gMonShinyPalette_Regieleki[] = INCBIN_U32("graphics/pokemon/regieleki/shiny.gbapal.lz");
