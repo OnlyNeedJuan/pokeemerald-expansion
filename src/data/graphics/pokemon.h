@@ -4178,6 +4178,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_Azutrice[] = INCBIN_U32("graphics/pokemon/azutrice/shiny.gbapal.lz");
     const u8 gMonIcon_Azutrice[] = INCBIN_U8("graphics/pokemon/azutrice/icon.4bpp");
     const u8 gMonFootprint_Azutrice[] = INCBIN_U8("graphics/pokemon/azutrice/footprint.1bpp");
+
 #if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_AltariaMega[] = INCBIN_U32("graphics/pokemon/altaria/mega/front.4bpp.lz");
     const u32 gMonPalette_AltariaMega[] = INCBIN_U32("graphics/pokemon/altaria/mega/normal.gbapal.lz");

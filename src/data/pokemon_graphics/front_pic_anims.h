@@ -4507,11 +4507,14 @@ static const union AnimCmd sAnim_Altaria_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
+
+static const union AnimCmd sAnim_Azutrice_1[] =
 {
     ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 15)
-}
-
+    ANIMCMD_FRAME(1, 50),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(AltariaMega);
 #endif //P_MEGA_EVOLUTIONS
@@ -11258,6 +11261,7 @@ SINGLE_ANIMATION(Cacturne);
 #if P_FAMILY_SWABLU
 SINGLE_ANIMATION(Swablu);
 SINGLE_ANIMATION(Altaria);
+SINGLE_ANIMATION(Azutrice);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(AltariaMega);
 #endif //P_MEGA_EVOLUTIONS

@@ -314,22 +314,22 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .trainerScale = 256,
         .trainerOffset = 0,
         FRONT_PIC(SandyShocksPreEvo, 64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 12,
         .frontAnimFrames = sAnims_SandyShocksPreEvo,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 0,
         BACK_PIC(SandyShocksPreEvo, 64, 64),
-        .backPicYOffset = 7,
+        .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         PALETTES(SandyShocks),
         ICON(SandyShocksPreEvo, 0),
-        .footprint = gMonFootprint_Sandy_Shocks,
+        //.footprint = gMonFootprint_SandyShocksPreEvo,
         LEARNSETS(SandyShocks),
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SANDY_SHOCKS}),
     },
 #endif //P_FAMILY_SANDY_SHOCKS
 
-
+#if P_FAMILY_MOLTRES
     [SPECIES_MOLTRES_REGIONAL] =
     {
         .baseHP        = 90,
@@ -378,6 +378,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         LEARNSETS(MoltresRegional),
         .formSpeciesIdTable = sMoltresFormSpeciesIdTable,
     },
+#endif //P_FAMILY_MOLTRES
+
 #if P_FAMILY_SWABLU
     [SPECIES_AZUTRICE] =
     {
@@ -399,7 +401,6 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggGroups = { EGG_GROUP_FLYING, EGG_GROUP_DRAGON },
         .bodyColor = BODY_COLOR_BLUE,
         .abilities = { ABILITY_PIXILATE, ABILITY_NONE, ABILITY_BERSERK },
-        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Azutrice"),
         .cryId = CRY_ALTARIA_MEGA,
         .categoryName = _("Fluffy Bird"),
@@ -427,7 +428,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .footprint = gMonFootprint_Azutrice,
         LEARNSETS(Altaria),
     },
-    #endif //P_FAMILY_SWABLU
+#endif //P_FAMILY_SWABLU
 
     /*
     [SPECIES_NONE] =
