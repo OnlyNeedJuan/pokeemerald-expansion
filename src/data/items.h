@@ -14085,5 +14085,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .iconPic = gItemIcon_DragonStone, 
+        .iconPalette = gItemIconPalette_DragonStone,
+
     },
 };
