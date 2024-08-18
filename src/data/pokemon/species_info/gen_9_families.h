@@ -4717,7 +4717,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_SandyShocks,
         .iconPalIndex = 0,
         //FOOTPRINT(SandyShocks)
-        .isParadoxForm = FALSE,
+        .isParadox = FALSE,
         .levelUpLearnset = sSandyShocksLevelUpLearnset,
         .teachableLearnset = sSandyShocksTeachableLearnset,
     },
