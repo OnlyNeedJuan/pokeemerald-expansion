@@ -295,7 +295,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .bodyColor = BODY_COLOR_BLUE,
         .abilities = { ABILITY_PIXILATE, ABILITY_NONE, ABILITY_BERSERK },
         .speciesName = _("Azutrice"),
-        .cryId = CRY_ALTARIA_MEGA,
+        .cryId = CRY_ALTARIA,
         .categoryName = _("Fluffy Bird"),
         .height = 15,
         .weight = 206,
@@ -323,6 +323,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .footprint = gMonFootprint_Azutrice,
         .levelUpLearnset = sAltariaLevelUpLearnset,
         .teachableLearnset = sAltariaTeachableLearnset,
+        .isAirborne = TRUE,
     },
 #endif //P_FAMILY_SWABLU
 

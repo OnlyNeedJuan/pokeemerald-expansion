@@ -8663,6 +8663,8 @@ static bool32 IsBattlerGrounded2(u32 battler, bool32 considerInverse)
         return FALSE;
     if (IS_BATTLER_OF_TYPE(battler, TYPE_FLYING) && (!considerInverse || !FlagGet(B_FLAG_INVERSE_BATTLE)))
         return FALSE;
+    if (gSpeciesInfo[gBattleMons[battler].species].isAirborne)
+        return FALSE;
     return TRUE;
 }
 

@@ -42152,10 +42152,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 16865
-    [TRAINER_MAY_PLACEHOLDER] =
+    [TRAINER_ZIGGYGOON] =
     {
 #line 16866
-        .trainerName = _("MAY"),
+        .trainerName = _("ZIGZAGOON"),
 #line 16867
         .trainerClass = TRAINER_CLASS_RS_PROTAG,
 #line 16868
@@ -42172,7 +42172,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 16873
-            .species = SPECIES_KYOGRE,
+            .species = SPECIES_AZUTRICE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16875
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),

@@ -1019,3 +1019,7 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+LittlerootTown_EventZigzagoontrain::
+	trainerbattle_single TRAINER_ZIGGYGOON, Route110_Text_AnthonyIntro, Route110_Text_AnthonyDefeated
+	msgbox Route110_Text_AnthonyPostBattle, MSGBOX_AUTOCLOSE
+	end
