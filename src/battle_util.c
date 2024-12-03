@@ -8668,9 +8668,16 @@ static bool32 IsBattlerGrounded2(u32 battler, bool32 considerInverse)
     return TRUE;
 }
 
+
+
 bool32 IsBattlerGrounded(u32 battler)
 {
     return IsBattlerGrounded2(battler, FALSE);
+}
+
+bool32 IsBattlerAirborne(u32 battler)
+{
+    return IsBattlerAirborne2(u32 battler)
 }
 
 bool32 IsBattlerAlive(u32 battler)
@@ -10614,13 +10621,8 @@ s32 GetStealthHazardDamageByTypesAndHP(u8 hazardType, u8 type1, u8 type2, u32 ma
     case UQ_4_12(0.0):
         dmg = 0;
         break;
-    case UQ_4_12(0.25):
-        dmg = maxHp / 32;
-        if (dmg == 0)
-            dmg = 1;
-        break;
-    case UQ_4_12(0.5):
-        dmg = maxHp / 16;
+    case UQ_4_12(1.0):
+        dmg = maxHp / 8;
         if (dmg == 0)
             dmg = 1;
         break;
@@ -10629,13 +10631,18 @@ s32 GetStealthHazardDamageByTypesAndHP(u8 hazardType, u8 type1, u8 type2, u32 ma
         if (dmg == 0)
             dmg = 1;
         break;
-    case UQ_4_12(2.0):
-        dmg = maxHp / 4;
+    case UQ_4_12(1.0):
+        dmg = maxHp / 8;
         if (dmg == 0)
             dmg = 1;
         break;
-    case UQ_4_12(4.0):
-        dmg = maxHp / 2;
+    case UQ_4_12(1.0):
+        dmg = maxHp / 8;
+        if (dmg == 0)
+            dmg = 1;
+        break;
+    case UQ_4_12(1.0):
+        dmg = maxHp / 8;
         if (dmg == 0)
             dmg = 1;
         break;
