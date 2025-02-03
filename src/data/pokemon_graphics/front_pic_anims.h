@@ -9846,7 +9846,12 @@ static const union AnimCmd sAnim_Regieleki_1[] =
 #endif //P_FAMILY_REGIELEKI
 
 #if P_FAMILY_REGIDRAGO
-PLACEHOLDER_ANIM_SINGLE_FRAME(Regidrago);
+static const union AnimCmd sAnim_Regidrago_1[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 60),
+    ANIMCMD_FRAME(0, 10),
+};
 #endif //P_FAMILY_REGIDRAGO
 
 #if P_FAMILY_GLASTRIER

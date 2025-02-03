@@ -8752,11 +8752,6 @@ bool32 IsBattlerGrounded(u32 battler)
     return IsBattlerGroundedInverseCheck(battler, FALSE);
 }
 
-bool32 IsBattlerAirborne(u32 battler)
-{
-    return IsBattlerAirborne2(u32 battler);
-}
-
 bool32 IsBattlerAlive(u32 battler)
 {
     if (gBattleMons[battler].hp == 0)
@@ -10516,7 +10511,7 @@ static inline void MulByTypeEffectiveness(uq4_12_t *modifier, u32 move, u32 move
         mod = UQ_4_12(1.0);
     if (gMovesInfo[move].effect == EFFECT_SUPER_EFFECTIVE_ON_ARG && defType == gMovesInfo[move].argument)
         mod = UQ_4_12(2.0);
-    if (moveType == TYPE_GROUND && defType == TYPE_FLYING && IsBattlerGrounded(battlerDef) && mod == UQ_4_12(0.0))
+    if (moveType == TYPE_GROUND && defType == TYPE_FLYING && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
     if (moveType == TYPE_STELLAR && GetActiveGimmick(battlerDef) == GIMMICK_TERA)
         mod = UQ_4_12(2.0);
@@ -10595,7 +10590,7 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(u32 move, u32 mov
         if (B_GLARE_GHOST < GEN_4 && move == MOVE_GLARE && IS_BATTLER_OF_TYPE(battlerDef, TYPE_GHOST))
             modifier = UQ_4_12(0.0);
     }
-    else if (moveType == TYPE_GROUND && !IsBattlerGroundedInverseCheck(battlerDef, TRUE) && !(gMovesInfo[move].ignoreTypeIfFlyingAndUngrounded))
+    else if (moveType == TYPE_GROUND && !(gMovesInfo[move].ignoreTypeIfFlyingAndUngrounded))
     {
         modifier = UQ_4_12(0.0);
         if (recordAbilities && defAbility == ABILITY_LEVITATE)
@@ -10746,7 +10741,12 @@ s32 GetStealthHazardDamageByTypesAndHP(u8 hazardType, u8 type1, u8 type2, u32 ma
     case UQ_4_12(0.0):
         dmg = 0;
         break;
-    case UQ_4_12(1.0):
+    case UQ_4_12(0.25):
+        dmg = maxHp / 8;
+        if (dmg == 0)
+            dmg = 1;
+        break;
+    case UQ_4_12(0.5):
         dmg = maxHp / 8;
         if (dmg == 0)
             dmg = 1;
@@ -10756,17 +10756,12 @@ s32 GetStealthHazardDamageByTypesAndHP(u8 hazardType, u8 type1, u8 type2, u32 ma
         if (dmg == 0)
             dmg = 1;
         break;
-    case UQ_4_12(1.0):
+    case UQ_4_12(2.0):
         dmg = maxHp / 8;
         if (dmg == 0)
             dmg = 1;
         break;
-    case UQ_4_12(1.0):
-        dmg = maxHp / 8;
-        if (dmg == 0)
-            dmg = 1;
-        break;
-    case UQ_4_12(1.0):
+    case UQ_4_12(4.0):
         dmg = maxHp / 8;
         if (dmg == 0)
             dmg = 1;

@@ -12275,8 +12275,8 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Azutrice[] = INCBIN_U32("graphics/pokemon/azutrice/anim_front.4bpp.lz");
-    const u32 gMonPalette_Azutrice[] = INCBIN_U32("graphics/pokemon/azutrice/normal.gbapal.lz");
+    const u32 gMonFrontPic_Azutrice[] = INCBIN_U32("graphics/pokemon/azutrice/anim_frontsnek.4bpp.lz");
+    const u32 gMonPalette_Azutrice[] = INCBIN_U32("graphics/pokemon/azutrice/normalsnek.gbapal.lz");
     const u32 gMonBackPic_Azutrice[] = INCBIN_U32("graphics/pokemon/azutrice/back.4bpp.lz");
     const u32 gMonShinyPalette_Azutrice[] = INCBIN_U32("graphics/pokemon/azutrice/shiny.gbapal.lz");
     const u8 gMonIcon_Azutrice[] = INCBIN_U8("graphics/pokemon/azutrice/icon.4bpp");
@@ -24503,7 +24503,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_REGIELEKI
 
 #if P_FAMILY_REGIDRAGO
-    const u32 gMonFrontPic_Regidrago[] = INCBIN_U32("graphics/pokemon/regidrago/front.4bpp.lz");
+    const u32 gMonFrontPic_Regidrago[] = INCBIN_U32("graphics/pokemon/regidrago/anim_front.4bpp.lz");
     const u32 gMonPalette_Regidrago[] = INCBIN_U32("graphics/pokemon/regidrago/normal.gbapal.lz");
     const u32 gMonBackPic_Regidrago[] = INCBIN_U32("graphics/pokemon/regidrago/back.4bpp.lz");
     const u32 gMonShinyPalette_Regidrago[] = INCBIN_U32("graphics/pokemon/regidrago/shiny.gbapal.lz");
