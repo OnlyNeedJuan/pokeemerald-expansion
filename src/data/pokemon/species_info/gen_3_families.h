@@ -1112,7 +1112,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             ANIMCMD_FRAME(1, 6),
             ANIMCMD_FRAME(0, 1),
         ),
-        .frontAnimId = ANIM_H_SLIDE,
+        .frontAnimId = ANIM_V_SHAKE,
         .backPic = gMonBackPic_Zigzagoon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(56, 56),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 11 : 6,

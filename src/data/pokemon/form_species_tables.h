@@ -14,6 +14,7 @@ static const u16 sVenusaurFormSpeciesIdTable[] = {
 #if P_FAMILY_CHARMANDER
 static const u16 sCharizardFormSpeciesIdTable[] = {
     SPECIES_CHARIZARD,
+    SPECIES_CHARIZARD_DRAGONSTONE,
 #if P_MEGA_EVOLUTIONS
     SPECIES_CHARIZARD_MEGA_X,
     SPECIES_CHARIZARD_MEGA_Y,

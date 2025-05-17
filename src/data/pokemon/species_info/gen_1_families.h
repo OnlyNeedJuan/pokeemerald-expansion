@@ -10598,7 +10598,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Farfetchd)
         OVERWORLD(
             sPicTable_Farfetchd,
-            SIZE_32x32,
+            SIZE_32x32,+
             SHADOW_SIZE_M,
             TRACKS_NONE,
             sAnimTable_Following_Asym,
@@ -10620,7 +10620,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 55,
         .baseSpAttack  = 58,
         .baseSpDefense = 62,
-        .types = MON_TYPES(TYPE_FIGHTING),
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_FLYING),
         .catchRate = 45,
         .expYield = FARFETCHD_EXP_YIELD,
         .evYield_Attack = 1,
@@ -10650,7 +10650,20 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPic = gMonFrontPic_FarfetchdGalar,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+        ),
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_FarfetchdGalar,
         .backPicSize = MON_COORDS_SIZE(64, 48),
@@ -10660,7 +10673,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .shinyPalette = gMonShinyPalette_FarfetchdGalar,
         .iconSprite = gMonIcon_FarfetchdGalar,
         .iconPalIndex = 1,
-        SHADOW(-7, 2, SHADOW_SIZE_L)
+        SHADOW(0, 4, SHADOW_SIZE_M)
         FOOTPRINT(Farfetchd)
         OVERWORLD(
             sPicTable_FarfetchdGalar,
@@ -17986,7 +17999,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             ANIMCMD_FRAME(1, 20),
             ANIMCMD_FRAME(0, 5),
         ),
-        .frontAnimId = ANIM_SHRINK_GROW,
+        .frontAnimId = ANIM_H_STRETCH_FAR_SLOW,
         .backPic = gMonBackPic_Sylveon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,

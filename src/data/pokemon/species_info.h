@@ -210,7 +210,15 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_SandyShocksPreEvo,
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_SandyShocksPreEvo,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 0),
+        ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_SandyShocksPreEvo,
@@ -262,7 +270,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .trainerOffset = 8,
         .frontPic = gMonFrontPic_MoltresRegional,
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_MoltresRegional,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_MoltresRegional,
@@ -316,7 +324,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Azutrice,
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Azutrice,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_GROW,
         .enemyMonElevation = 6,
         .backPic = gMonBackPic_Azutrice,
@@ -332,6 +340,75 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .isAirborne = TRUE,
     },
 #endif //P_FAMILY_SWABLU
+
+#if P_FAMILY_CHARMANDER
+    [SPECIES_CHARIZARD_DRAGONSTONE] =
+    {
+        .baseHP        = 78,
+        .baseAttack    = 84,
+        .baseDefense   = 78,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 109,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_DRAGON),
+        .catchRate = 45,
+        .expYield = 267,
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_SOLAR_POWER },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Charizard"),
+        .cryId = CRY_CHARIZARD,
+        .natDexNum = NATIONAL_DEX_CHARIZARD,
+        .categoryName = _("Flame"),
+        .height = 17,
+        .weight = 905,
+        .description = COMPOUND_STRING(
+            "A Charizard flies about in search of\n"
+            "strong opponents. It breathes intense\n"
+            "flames that can melt any material. However,\n"
+            "it will never torch a weaker foe."),
+        .pokemonScale = 256,
+        .pokemonOffset = 1,
+        .trainerScale = 302,
+        .trainerOffset = 3,
+        .frontPic = gMonFrontPic_CharizardDragonstone,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 1 : 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_CharizardDragonstone,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 1,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
+        .palette = gMonPalette_CharizardDragonstone,
+        .shinyPalette = gMonShinyPalette_CharizardDragonstone,
+        .iconSprite = gMonIcon_CharizardDragonstone,
+        .iconPalIndex = 0,
+        SHADOW(2, 13, SHADOW_SIZE_L)
+        FOOTPRINT(Charizard)
+        OVERWORLD(
+            sPicTable_Charizard,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Charizard,
+            gShinyOverworldPalette_Charizard
+        )
+        .levelUpLearnset = sCharizardLevelUpLearnset,
+        .teachableLearnset = sCharizardTeachableLearnset,
+        .formSpeciesIdTable = sCharizardFormSpeciesIdTable,
+        .formChangeTable = sCharizardFormChangeTable,
+    },
+#endif //P_FAMILY_CHARMANDER
 
     /*
     [SPECIES_NONE] =

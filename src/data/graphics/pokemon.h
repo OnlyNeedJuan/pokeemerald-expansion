@@ -263,6 +263,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GIGANTAMAX_FORMS
+#if P_REGIONAL_FORMS
+    const u32 gMonFrontPic_CharizardDragonstone[] = INCBIN_U32("graphics/pokemon/charizard/dragonstone/anim_front.4bpp.lz");
+    const u32 gMonPalette_CharizardDragonstone[] = INCBIN_U32("graphics/pokemon/charizard/dragonstone/normal.gbapal.lz");
+    const u32 gMonBackPic_CharizardDragonstone[] = INCBIN_U32("graphics/pokemon/charizard/dragonstone/back.4bpp.lz");
+    const u32 gMonShinyPalette_CharizardDragonstone[] = INCBIN_U32("graphics/pokemon/charizard/dragonstone/shiny.gbapal.lz");
+    const u8 gMonIcon_CharizardDragonstone[] = INCBIN_U8("graphics/pokemon/charizard/icon.4bpp");
+#endif //P_REGIONAL_FORMS
 #endif //P_FAMILY_CHARMANDER
 
 #if P_FAMILY_SQUIRTLE
@@ -3347,7 +3354,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_FarfetchdGalar[] = INCBIN_U32("graphics/pokemon/farfetchd/galar/front.4bpp.lz");
+    const u32 gMonFrontPic_FarfetchdGalar[] = INCBIN_U32("graphics/pokemon/farfetchd/galar/anim_front.4bpp.lz");
     const u32 gMonPalette_FarfetchdGalar[] = INCBIN_U32("graphics/pokemon/farfetchd/galar/normal.gbapal.lz");
     const u32 gMonBackPic_FarfetchdGalar[] = INCBIN_U32("graphics/pokemon/farfetchd/galar/back.4bpp.lz");
     const u32 gMonShinyPalette_FarfetchdGalar[] = INCBIN_U32("graphics/pokemon/farfetchd/galar/shiny.gbapal.lz");
@@ -8084,7 +8091,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 
 #if P_GEN_9_CROSS_EVOS
-    const u32 gMonFrontPic_Farigiraf[] = INCBIN_U32("graphics/pokemon/farigiraf/front.4bpp.lz");
+    const u32 gMonFrontPic_Farigiraf[] = INCBIN_U32("graphics/pokemon/farigiraf/anim_front.4bpp.lz");
     const u32 gMonPalette_Farigiraf[] = INCBIN_U32("graphics/pokemon/farigiraf/normal.gbapal.lz");
     const u32 gMonBackPic_Farigiraf[] = INCBIN_U32("graphics/pokemon/farigiraf/back.4bpp.lz");
     const u32 gMonShinyPalette_Farigiraf[] = INCBIN_U32("graphics/pokemon/farigiraf/shiny.gbapal.lz");
