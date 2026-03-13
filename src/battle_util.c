@@ -5879,6 +5879,8 @@ bool32 IsBattlerProtected(struct BattleContext *ctx)
     {
         if (IsZMove(ctx->move) || IsMaxMove(ctx->move))
             return FALSE; // Z-Moves and Max Moves bypass protection (except Max Guard).
+        if (ctx->abilityAtk == ABILITY_TRUANT)
+            return FALSE;
         if (ctx->abilityAtk == ABILITY_UNSEEN_FIST
          && IsMoveMakingContact(ctx->battlerAtk, ctx->battlerDef, ctx->abilityAtk, ctx->holdEffectAtk, ctx->move))
             return FALSE;
