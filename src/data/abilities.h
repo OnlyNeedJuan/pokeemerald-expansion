@@ -2406,8 +2406,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_POISON_PUPPETEER] =
     {
-        .name = _("Poison Puppeteer"),
-        .description = COMPOUND_STRING("Confuses poisoned foes."),
+        .name = _("P"),
+        .description = COMPOUND_STRING("C."),
         .aiRating = 8,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
@@ -2420,5 +2420,5 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Striker"),
         .description = COMPOUND_STRING("Powers up kicking moves."),
         .aiRating = 7,
-    }
+    },
 };
