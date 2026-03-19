@@ -336,6 +336,7 @@ enum __attribute__((packed)) Ability
 
     //Custom Abilities
     ABILITY_STRIKER = ABILITIES_COUNT_GEN9,
+    ABILITY_CACAPHONY = 312,
     ABILITIES_COUNT_CUSTOM,
     ABILITIES_COUNT = ABILITIES_COUNT_CUSTOM,
 };

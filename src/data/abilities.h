@@ -2421,4 +2421,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Powers up kicking moves."),
         .aiRating = 7,
     },
+
+    [ABILITY_CACAPHONY] =
+    {
+        .name = _("Cacaphony"),
+        .description = COMPOUND_STRING("Ups and resists sound."),
+        .aiRating = 2,
+        .breakable = TRUE,
+    },
 };

@@ -6682,6 +6682,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct BattleContext *ctx)
         if (IsSoundMove(move))
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
+    case ABILITY_CACAPHONY:
+        if (IsSoundMove(move))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+    break;    
     case ABILITY_STEELY_SPIRIT:
         if (moveType == TYPE_STEEL)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
@@ -7569,6 +7573,13 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(struct BattleContext *ctx)
             recordAbility = TRUE;
         }
         break;
+    case ABILITY_CACAPHONY:
+        if (IsSoundMove(ctx->move))
+        {
+            modifier = UQ_4_12(0.5);
+            recordAbility = TRUE;
+        }
+    break;
     case ABILITY_ICE_SCALES:
         if (IsBattleMoveSpecial(ctx->move))
         {
