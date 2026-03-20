@@ -1,13 +1,13 @@
 #include "global.h"
 #include "test/battle.h"
 
-SINGLE_BATTLE_TEST("Punk Rock increases the power of sound moves by 30%", s16 damage)
+SINGLE_BATTLE_TEST("Cacaphony increases the power of sound moves by 30%", s16 damage)
 {
     u32 move;
     enum Ability ability;
-    PARAMETRIZE { move = MOVE_HYPER_VOICE; ability = ABILITY_PUNK_ROCK; }
+    PARAMETRIZE { move = MOVE_HYPER_VOICE; ability = ABILITY_CACAPHONY; }
     PARAMETRIZE { move = MOVE_HYPER_VOICE; ability = ABILITY_SCRAPPY; }
-    PARAMETRIZE { move = MOVE_STRENGTH; ability = ABILITY_PUNK_ROCK; }
+    PARAMETRIZE { move = MOVE_STRENGTH; ability = ABILITY_CACAPHONY; }
     PARAMETRIZE { move = MOVE_STRENGTH; ability = ABILITY_SCRAPPY; }
 
     GIVEN {
@@ -25,11 +25,11 @@ SINGLE_BATTLE_TEST("Punk Rock increases the power of sound moves by 30%", s16 da
     }
 }
 
-SINGLE_BATTLE_TEST("Punk Rock halves damage from sound moves", s16 damage)
+SINGLE_BATTLE_TEST("Cacaphony halves damage from sound moves", s16 damage)
 {
     enum Ability ability;
     PARAMETRIZE { ability = ABILITY_SCRAPPY; }
-    PARAMETRIZE { ability = ABILITY_PUNK_ROCK; }
+    PARAMETRIZE { ability = ABILITY_CACAPHONY; }
     GIVEN {
         ASSUME(IsSoundMove(MOVE_HYPER_VOICE));
         PLAYER(SPECIES_WOBBUFFET);
