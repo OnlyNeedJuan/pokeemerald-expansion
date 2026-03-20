@@ -20,8 +20,8 @@ SINGLE_BATTLE_TEST("Punk Rock increases the power of sound moves by 30%", s16 da
     } SCENE {
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
-        EXPECT_MUL_EQ(results[1].damage, Q_4_12(1.3), results[0].damage); // Cacaphony affects sound moves
-        EXPECT_EQ(results[2].damage, results[3].damage); // Cacaphony does not affect non-sound moves
+        EXPECT_MUL_EQ(results[1].damage, Q_4_12(1.3), results[0].damage); // Punk Rock affects sound moves
+        EXPECT_EQ(results[2].damage, results[3].damage); // Punk Rock does not affect non-sound moves
     }
 }
 
