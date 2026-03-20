@@ -2422,9 +2422,9 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 7,
     },
 
-    [ABILITY_CACAPHONY] =
+    [ABILITY_CACOPHONY] =
     {
-        .name = _("Cacaphony"),
+        .name = _("Cacophony"),
         .description = COMPOUND_STRING("Ups and resists sound."),
         .aiRating = 2,
         .breakable = TRUE,

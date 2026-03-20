@@ -6682,7 +6682,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct BattleContext *ctx)
         if (IsSoundMove(move))
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
-    case ABILITY_CACAPHONY:
+    case ABILITY_CACOPHONY:
         if (IsSoundMove(move))
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
     break;    
@@ -7573,7 +7573,7 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(struct BattleContext *ctx)
             recordAbility = TRUE;
         }
         break;
-    case ABILITY_CACAPHONY:
+    case ABILITY_CACOPHONY:
         if (IsSoundMove(ctx->move))
         {
             modifier = UQ_4_12(0.5);
