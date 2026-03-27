@@ -5879,6 +5879,8 @@ bool32 IsBattlerProtected(struct BattleContext *ctx)
     {
         if (IsZMove(ctx->move) || IsMaxMove(ctx->move))
             return FALSE; // Z-Moves and Max Moves bypass protection (except Max Guard).
+        if (ctx->abilityAtk == ABILITY_TRUANT)
+            return FALSE;
         if (ctx->abilityAtk == ABILITY_UNSEEN_FIST
          && IsMoveMakingContact(ctx->battlerAtk, ctx->battlerDef, ctx->abilityAtk, ctx->holdEffectAtk, ctx->move))
             return FALSE;
@@ -6680,6 +6682,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct BattleContext *ctx)
         if (IsSoundMove(move))
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
+    case ABILITY_CACOPHONY:
+        if (IsSoundMove(move))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+    break;    
     case ABILITY_STEELY_SPIRIT:
         if (moveType == TYPE_STEEL)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
@@ -6688,6 +6694,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct BattleContext *ctx)
         if (IsSlicingMove(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_STRIKER:
+        if (IsKickingMove(move))
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        break;    
     case ABILITY_SUPREME_OVERLORD:
         modifier = uq4_12_multiply(modifier, GetSupremeOverlordModifier(battlerAtk));
         break;
@@ -7563,6 +7573,13 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(struct BattleContext *ctx)
             recordAbility = TRUE;
         }
         break;
+    case ABILITY_CACOPHONY:
+        if (IsSoundMove(ctx->move))
+        {
+            modifier = UQ_4_12(0.5);
+            recordAbility = TRUE;
+        }
+    break;
     case ABILITY_ICE_SCALES:
         if (IsBattleMoveSpecial(ctx->move))
         {

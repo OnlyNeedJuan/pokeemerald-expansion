@@ -112,6 +112,7 @@ struct MoveInfo
     bool32 danceMove:1;
     bool32 windMove:1;
     bool32 slicingMove:1;
+    bool32 kickingMove:1;
     bool32 healingMove:1;
     bool32 minimizeDoubleDamage:1;
     // end of word
@@ -385,6 +386,11 @@ static inline bool32 IsWindMove(enum Move moveId)
 static inline bool32 IsSlicingMove(enum Move moveId)
 {
     return gMovesInfo[SanitizeMoveId(moveId)].slicingMove;
+}
+
+static inline bool32 IsKickingMove(enum Move moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].kickingMove;
 }
 
 static inline bool32 IsHealingMove(enum Move moveId)

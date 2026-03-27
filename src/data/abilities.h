@@ -2406,11 +2406,27 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_POISON_PUPPETEER] =
     {
-        .name = _("Poison Puppeteer"),
-        .description = COMPOUND_STRING("Confuses poisoned foes."),
+        .name = _("P"),
+        .description = COMPOUND_STRING("C."),
         .aiRating = 8,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
+    },
+    
+    //Custom Abilities
+    [ABILITY_STRIKER] =
+    {
+        .name = _("Striker"),
+        .description = COMPOUND_STRING("Powers up kicking moves."),
+        .aiRating = 7,
+    },
+
+    [ABILITY_CACOPHONY] =
+    {
+        .name = _("Cacophony"),
+        .description = COMPOUND_STRING("Ups and resists sound."),
+        .aiRating = 2,
+        .breakable = TRUE,
     },
 };
