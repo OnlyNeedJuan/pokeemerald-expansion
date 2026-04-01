@@ -242,7 +242,7 @@ DOUBLE_BATTLE_TEST("Plucky is activated by Cotton Down for non-ally Pokémon")
         EXPECT_EQ(playerRight->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 1);
         EXPECT_EQ(opponentRight->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 1);
     }
-}x
+}
 
 SINGLE_BATTLE_TEST("Plucky activates before White Herb")
 {
