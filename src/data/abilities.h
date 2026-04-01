@@ -2429,4 +2429,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 2,
         .breakable = TRUE,
     },
+
+        [ABILITY_PLUCKY] =
+    {
+        .name = _("Plucky"),
+        .description = COMPOUND_STRING("Lowered stats up Speed."),
+        .aiRating = 6,
+    },
+
 };

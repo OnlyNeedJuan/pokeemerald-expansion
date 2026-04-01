@@ -1189,7 +1189,7 @@ bool32 IsLastMonToMove(enum BattlerId battler)
 bool32 ShouldDefiantCompetitiveActivate(enum BattlerId battler, enum Ability ability)
 {
     enum BattleSide side = GetBattlerSide(battler);
-    if (ability != ABILITY_DEFIANT && ability != ABILITY_COMPETITIVE)
+    if (ability != ABILITY_DEFIANT && ability != ABILITY_COMPETITIVE && ability != ABILITY_PLUCKY)
         return FALSE;
     // if an ally dropped the stats (except for Sticky Web), don't activate
     if (IsBattlerAlly(gSpecialStatuses[battler].changedStatsBattlerId, battler) && !gBattleScripting.stickyWebStatDrop)
@@ -1197,7 +1197,7 @@ bool32 ShouldDefiantCompetitiveActivate(enum BattlerId battler, enum Ability abi
 
     if (GetConfig(B_DEFIANT_STICKY_WEB) >= GEN_9 || !gBattleScripting.stickyWebStatDrop)
         return TRUE;
-    // only activate Defiant/Competitive if Web was setup by foe
+    // only activate Defiant/Competitive/Plucky if Web was setup by foe
     return gSideTimers[side].stickyWebBattlerSide != side;
 }
 
@@ -1261,8 +1261,10 @@ void PrepareStringBattle(enum StringID stringId, enum BattlerId battler)
         BattleScriptCall(BattleScript_AbilityRaisesDefenderStat);
         if (targetAbility == ABILITY_DEFIANT)
             SET_STATCHANGER(STAT_ATK, 2, FALSE);
-        else
+        else if (targetAbility == ABILITY_COMPETITIVE)
             SET_STATCHANGER(STAT_SPATK, 2, FALSE);
+        else
+            SET_STATCHANGER(STAT_SPEED, 2, FALSE);
     }
 
     BtlController_EmitPrintString(battler, B_COMM_TO_CONTROLLER, stringId);
