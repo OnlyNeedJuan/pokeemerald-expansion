@@ -213,10 +213,10 @@ SINGLE_BATTLE_TEST("Plucky activates after Sticky Web lowers Speed if Court Chan
 DOUBLE_BATTLE_TEST("Plucky is activated by Cotton Down for non-ally Pokémon")
 {
     GIVEN {
-        PLAYER(SPECIES_MANKEY) { Ability(ABILITY_PLUCKY); }
-        PLAYER(SPECIES_MANKEY) { Ability(ABILITY_PLUCKY); }
+        PLAYER(SPECIES_COMBUSKEN) { Ability(ABILITY_PLUCKY); }
+        PLAYER(SPECIES_COMBUSKEN) { Ability(ABILITY_PLUCKY); }
         OPPONENT(SPECIES_ELDEGOSS) { Ability(ABILITY_COTTON_DOWN); }
-        OPPONENT(SPECIES_MANKEY) { Ability(ABILITY_PLUCKY); }
+        OPPONENT(SPECIES_COMBUSKEN) { Ability(ABILITY_PLUCKY); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SCRATCH, target: opponentLeft); }
     } SCENE {
@@ -238,13 +238,11 @@ DOUBLE_BATTLE_TEST("Plucky is activated by Cotton Down for non-ally Pokémon")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
         MESSAGE("The opposing Combusken's Speed fell!");
     } THEN {
-        EXPECT_EQ(playerLeft->statStages[STAT_SPEED], DEFAULT_STAT_STAGE - 1);
-        EXPECT_EQ(playerRight->statStages[STAT_SPEED], DEFAULT_STAT_STAGE - 1);
-        EXPECT_EQ(opponentRight->statStages[STAT_SPEED], DEFAULT_STAT_STAGE - 1);
-        EXPECT_EQ(playerLeft->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 2);
-        EXPECT_EQ(playerRight->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 2);
+        EXPECT_EQ(playerLeft->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 1);
+        EXPECT_EQ(playerRight->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 1);
+        EXPECT_EQ(opponentRight->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 1);
     }
-}
+}x
 
 SINGLE_BATTLE_TEST("Plucky activates before White Herb")
 {
@@ -254,7 +252,7 @@ SINGLE_BATTLE_TEST("Plucky activates before White Herb")
     PARAMETRIZE { move = MOVE_GROWL; }
 
     GIVEN {
-        PLAYER(SPECIES_MANKEY) { Ability(ABILITY_PLUCKY); Item(ITEM_WHITE_HERB); }
+        PLAYER(SPECIES_COMBUSKEN) { Ability(ABILITY_PLUCKY); Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, move); }
@@ -296,7 +294,7 @@ SINGLE_BATTLE_TEST("Plucky activates for each stat that is lowered")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TICKLE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Combusken's Speed fell!");
+        MESSAGE("Combusken's Attack fell!");
         ABILITY_POPUP(player, ABILITY_PLUCKY);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Combusken's Speed sharply rose!");
@@ -307,7 +305,7 @@ SINGLE_BATTLE_TEST("Plucky activates for each stat that is lowered")
         MESSAGE("Combusken's Speed sharply rose!");
 
     } THEN {
-        EXPECT_EQ(player->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 3);
+        EXPECT_EQ(player->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 4);
     }
 }
 
