@@ -3297,7 +3297,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             {
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_PRESSURE;
                 BattleScriptCall(BattleScript_SwitchInAbilityMsg);
-                effect++;
+                effect+= 2;
             }
             break;
         case ABILITY_DARK_AURA:
