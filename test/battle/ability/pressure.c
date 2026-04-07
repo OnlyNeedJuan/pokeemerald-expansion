@@ -1,7 +1,7 @@
 #include "global.h"
 #include "test/battle.h"
 
-SINGLE_BATTLE_TEST("Pressure causes opponent's moves to use up 2 additional PP")
+SINGLE_BATTLE_TEST("Pressure causes opponent's moves to use up 1 additional PP")
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { MovesWithPP({MOVE_POUND, 35}); }
@@ -51,9 +51,9 @@ SINGLE_BATTLE_TEST("Pressure's effect applies to Spikes, Stealth Rock and Toxic 
         TURN { MOVE(player, MOVE_STEALTH_ROCK); }
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
     } THEN {
-        EXPECT_EQ(player->pp[0], 17);
-        EXPECT_EQ(player->pp[1], 17);
-        EXPECT_EQ(player->pp[2], 17);
+        EXPECT_EQ(player->pp[0], 18);
+        EXPECT_EQ(player->pp[1], 18);
+        EXPECT_EQ(player->pp[2], 18);
     }
 }
 
