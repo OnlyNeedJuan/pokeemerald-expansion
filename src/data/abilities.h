@@ -2437,4 +2437,10 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 6,
     },
 
+        [ABILITY_ARCING] =
+    {
+        .name = _("Arcing"),
+        .description = COMPOUND_STRING("Ups Electric moves in a pinch."),
+        .aiRating = 5,
+    },
 };
