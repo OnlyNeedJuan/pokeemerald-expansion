@@ -959,7 +959,7 @@ static enum CancelerResult CancelerPPDeduction(struct BattleContext *ctx)
     else if (moveTarget != TARGET_OPPONENTS_FIELD)
     {
         if (ctx->battlerAtk != ctx->battlerDef && GetBattlerAbility(ctx->battlerDef) == ABILITY_PRESSURE)
-             ppToDeduct++;
+             ppToDeduct+= 2;
     }
 
     // For item Metronome, echoed voice
