@@ -2443,4 +2443,48 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Ups Electric moves in a pinch."),
         .aiRating = 5,
     },
+
+        [ABILITY_RESENTFUL] =
+    {
+        .name =_("Resentful"),
+        .description = COMPOUND_STRING("Ups Ghost moves in a pinch."),
+        .aiRating = 5,
+    },
+    
+        [ABILITY_HYDRATE] =
+    {
+        .name =_("Hydrate"),
+        .description = COMPOUND_STRING("Normal moves become Water."),
+        .aiRating = 8,
+    },
+
+        [ABILITY_IMMOLATE] =
+    {
+        .name =_("Immolate"),
+        .description = COMPOUND_STRING("Normal moves become Fire."),
+        .aiRating = 8,
+    },
+
+        [ABILITY_FROZEN_TOUCH] =
+    {
+        .name = _("Frozen Touch"),
+        .description = COMPOUND_STRING("Freezes foe on contact."),
+        .aiRating = 4,
+    },
+
+        [ABILITY_HUBRIS] =
+    {
+        .name = _("Hubris"),
+        .description = COMPOUND_STRING("KOs raise SpA."),
+        .aiRating = 8,
+    },
+
+        [ABILITY_VILE] =
+    {
+        .name = _("Vile"),
+        .description = COMPOUND_STRING("Doubles status damage."),
+        .aiRating = 8,
+    },
+
+
 };
