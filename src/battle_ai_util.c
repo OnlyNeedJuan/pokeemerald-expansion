@@ -5840,6 +5840,7 @@ bool32 IsMoxieTypeAbility(enum Ability ability)
     case ABILITY_CHILLING_NEIGH:
     case ABILITY_AS_ONE_ICE_RIDER:
     case ABILITY_GRIM_NEIGH:
+    case ABILITY_HUBRIS:
     case ABILITY_AS_ONE_SHADOW_RIDER:
         return TRUE;
     default:
@@ -5897,6 +5898,7 @@ bool32 ShouldTriggerAbility(enum BattlerId battlerAtk, enum BattlerId battlerDef
             return (BattlerStatCanRise(battlerDef, ability, STAT_ATK) && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL));
 
         case ABILITY_COMPETITIVE:
+        case ABILITY_HUBRIS:
             return (BattlerStatCanRise(battlerDef, ability, STAT_SPATK) && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL));
 
         // TODO: logic for when to trigger Contrary

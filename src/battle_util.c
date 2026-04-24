@@ -4531,6 +4531,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         case ABILITY_CHILLING_NEIGH:
         case ABILITY_AS_ONE_ICE_RIDER:
         case ABILITY_GRIM_NEIGH:
+        case ABILITY_HUBRIS:
         case ABILITY_AS_ONE_SHADOW_RIDER:
         case ABILITY_BEAST_BOOST:
             {
@@ -4542,7 +4543,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
 
                 if (ability == ABILITY_BEAST_BOOST)
                     stat = GetHighestStatId(battler);
-                else if (ability == ABILITY_GRIM_NEIGH || ability == ABILITY_AS_ONE_SHADOW_RIDER)
+                else if (ability == ABILITY_GRIM_NEIGH || ability == ABILITY_AS_ONE_SHADOW_RIDER || ability == ABILITY_HUBRIS)
                     stat = STAT_SPATK;
 
                 if (numMonsFainted && CompareStat(battler, stat, MAX_STAT_STAGE, CMP_LESS_THAN, ability))
@@ -8265,11 +8266,7 @@ static inline void MulByTypeEffectiveness(struct BattleContext *ctx, uq4_12_t *m
         if (ctx->updateFlags)
             RecordAbilityBattle(ctx->battlerAtk, ctx->abilityAtk);
     }
-        else if (ctx->moveType == TYPE_POISON && defType == TYPE_STEEL && ctx->abilityAtk == ABILITY_CORROSION) {
-        mod = UQ_4_12(2.0);
-        if (ctx->updateFlags)
-            RecordAbilityBattle(ctx->battlerAtk, ctx->abilityAtk);
-    }
+
 
 
     if (ctx->moveType == TYPE_PSYCHIC && defType == TYPE_DARK && gBattleMons[ctx->battlerDef].volatiles.miracleEye && mod == UQ_4_12(0.0))
