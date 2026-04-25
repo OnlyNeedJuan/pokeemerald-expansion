@@ -323,4 +323,16 @@ SINGLE_BATTLE_TEST("Corrosion does not affect Poison Spikes")
     }
 }
 
-TO_DO_BATTLE_TEST("Dynamax: Corrosion can poison Poison/Steel types if the Pokémon uses G-Max Malodor")
+SINGLE_BATTLE_TEST("Corrosion deals super effective damage to Steel types")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_REGISTEEL);
+    } WHEN {
+        TURN { MOVE(player, MOVE_SLUDGE_BOMB); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SLUDGE_BOMB, player);
+        HP_BAR(opponent);
+        MESSAGE("It's super effective!");
+    }
+}
