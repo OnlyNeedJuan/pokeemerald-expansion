@@ -4096,12 +4096,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_FINIZEN
     [SPECIES_FINIZEN] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 45,
-        .baseDefense   = 40,
-        .baseSpeed     = 75,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 40,
+        .baseHP        = 99,
+        .baseAttack    = 70,
+        .baseDefense   = 82,
+        .baseSpeed     = 99,
+        .baseSpAttack  = 53,
+        .baseSpDefense = 72,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 200,
         .expYield = 63,
@@ -4111,7 +4111,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_WATER_VEIL, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_FRIEND_GUARD, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Finizen"),
         .cryId = CRY_FINIZEN,
@@ -4155,7 +4155,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sFinizenLevelUpLearnset,
         .teachableLearnset = sFinizenTeachableLearnset,
         .eggMoveLearnset = sFinizenEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_PALAFIN_ZERO}),
     },
 
     [SPECIES_PALAFIN_ZERO] =
